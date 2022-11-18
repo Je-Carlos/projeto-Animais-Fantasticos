@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="#-technologies">Technologies</a> 
+  <a href="#-technologies">Technologies</a> •
+  <a href="#license">License</a> 
 </p>
 
 <h2 align="center"> O Animais Fantásticos está sendo desenvolvido como um projeto, com o principal intuito de aprender a manipulação de DOM. </h2>
