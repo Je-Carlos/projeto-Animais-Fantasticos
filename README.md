@@ -15,7 +15,12 @@
 - [JavaScript](https://www.javascript.com/)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+
+## License
+<p>Animais-Fantasticos is available under the MIT license. See the LICENSE file for more info.</p>
+
 ---
+
 <p align="center">
   by <a href="https://www.linkedin.com/in/jean-carlos-berg/">Jean Carlos</a>
 </p>
