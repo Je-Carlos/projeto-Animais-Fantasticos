@@ -177,7 +177,7 @@ body {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
   }
-  .aniamsi-lista {
+  .animais-lista {
     grid-column: 1;
   }
   .faq-lista,
