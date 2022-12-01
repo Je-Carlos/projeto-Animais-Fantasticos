@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://iili.io/yTX1pV.png" />
+  <img src="https://simp5.jpg.church/Gatos_Fantasticos_.png" alt="Gatos Fantásticos 🐈" border="0">
 </p>
 
 <p align="center">
@@ -7,10 +7,10 @@
   <a href="#license">License</a> 
 </p>
 
-<h2 align="center"> O Animais Fantásticos está sendo desenvolvido como um projeto, com o principal intuito de aprender a manipulação de DOM. </h2>
+<h2 align="center"> O Gatos Fantásticos está sendo desenvolvido como um projeto de JavaScript. </h2>
 
-🚧 **Animais Fantásticos está em desenvolvimento** 🚧
-<p>Você já pode dar uma espiada em como está ficando <a href="https://je-carlos.github.io/projeto-Animais-Fantasticos/">aqui</a> 👀</p>
+🚧 **Gatos Fantásticos está em desenvolvimento** 🚧
+<p>Você já pode dar uma espiada em como está ficando <a href="https://je-carlos.github.io/projeto-Gatos-Fantasticos/">aqui</a> 👀</p>
 
 ## 🕶 Technologies
 - [JavaScript](https://www.javascript.com/)
@@ -18,7 +18,7 @@
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 
 ## License
-<p>Animais-Fantasticos is available under the MIT license. See the LICENSE file for more info.</p>
+<p>Gatos-Fantasticos is available under the MIT license. See the LICENSE file for more info.</p>
 
 ---
 
