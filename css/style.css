@@ -223,3 +223,42 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+.js .js-accordion dd {
+  display: none;
+}
+.js-accordion dt::after {
+  content: "⬎";
+  margin-left: 10px;
+}
+.js-accordion dt.active::after {
+  content: "⬏";
+}
+.js-accordion dd.active {
+  display: block;
+  animation: slideDown 0.7s forwards;
+}
+.js-accordion dt:hover {
+  cursor: pointer;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+.js-accordion dt::before{
+  top: 11px;
+  left: -30px;
+  transition: all 500ms ease;
+}
+.js-accordion dt:hover::before{
+  left: 7px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
