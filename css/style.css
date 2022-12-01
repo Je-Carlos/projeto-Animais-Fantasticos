@@ -47,6 +47,23 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.1em;
+  background-color: #fb5;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.menu a::after{
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu a:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+.menu a:hover::after{
+  opacity: 1;
+  padding-left: 8px;
 }
 
 .grid-section {
