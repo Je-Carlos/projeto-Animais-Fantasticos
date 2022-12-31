@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@300;400;700;900&family=Playfair+Display&display=swap");
+[data-cor]{
+  color: purple;
+  background: red;
+}
 h2,
 h3,
 ul,
@@ -223,14 +227,21 @@ body {
   }
 }
 /* JavaScript */
-.js .js-tabContent section {
+[data-tab="content"] section {
   display: none;
 }
-.js-tabContent section.active {
+[data-tab="content"] section.active {
   display: block !important;
-  animation: show 0.5s forwards;
 }
-@keyframes show {
+[data-tab="content"] section.active.show-right {
+
+  animation: show-right 0.5s forwards;
+}
+[data-tab="content"] section.active.show-down {
+
+  animation: show-down 0.5s forwards;
+}
+@keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
@@ -240,32 +251,42 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-.js .js-accordion dd {
+.js [data-anime="accordion"] dd {
   display: none;
 }
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
   content: "⬎";
   margin-left: 10px;
 }
-.js-accordion dt.active::after {
+[data-anime="accordion"] dt.active::after {
   content: "⬏";
 }
-.js-accordion dd.active {
+[data-anime="accordion"] dd.active {
   display: block;
   animation: slideDown 0.7s forwards;
 }
-.js-accordion dt:hover {
+[data-anime="accordion"] dt:hover {
   cursor: pointer;
   padding: 10px 40px;
   overflow: hidden;
 }
-.js-accordion dt::before{
+[data-anime="accordion"] dt::before{
   top: 11px;
   left: -30px;
-  transition: all 500ms ease;
+  transition: all 2000ms ease;
 }
-.js-accordion dt:hover::before{
+[data-anime="accordion"] dt:hover::before{
   left: 7px;
 }
 
@@ -280,11 +301,11 @@ body {
   }
 }
 
-.js .js-scroll {
+.js [data-anime='scroll'] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
 }
-.js .js-scroll.active{
+.js [data-anime='scroll'].active{
   opacity: 1;
   transition: .3s;
   transform: translate3d(0, 0, 0);

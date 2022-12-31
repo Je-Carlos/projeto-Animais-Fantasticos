@@ -12,7 +12,7 @@
     <title>Gatos Fantásticos</title>
   </head>
   <body>
-    <nav class="menu js-menu">
+    <nav class="menu "data-menu='scroll'>
       <ul>
         <li><a href="#animais">Raças</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -20,9 +20,9 @@
         <li><a href="https://www.github.com/Je-Carlos">Dev</a></li>
       </ul>
     </nav>
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais" data-anime="scroll" id="animais">
       <h1 class="titulo">Gatos Fantásticos</h1>
-      <ul class="animais-lista js-tabMenu">
+      <ul class="animais-lista" data-tab="menu">
         <li>
           <img
             src="src/img/imagem1.jpg"
@@ -54,8 +54,8 @@
             alt="Um gato viralata siamês marrom claro e escuro chamado Sushi." />
         </li>
       </ul>
-      <div class="animais-descricao js-tabContent">
-        <section>
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
           <h2>Persa</h2>
           <p>
             Persa é uma raça de gato doméstico originária do Irã, antiga Pérsia.
@@ -95,7 +95,7 @@
             nos filmes de From Russia with Love 1963 e Thunderball de 1965.
           </p>
         </section>
-        <section>
+        <section data-anime="show-down" >
           <h2>Maine Coon</h2>
           <p>
             Maine Coon é uma raça de gato originária do nordeste dos Estados
@@ -131,7 +131,7 @@
             menores que os machos.
           </p>
         </section>
-        <section>
+        <section data-anime="show-right">
           <h2>Sphynx</h2>
           <p>
             Sphynx, ou gato pelado canadense, é uma raça de gatos originária do
@@ -181,7 +181,7 @@
             retirando corpos estranhos.
           </p>
         </section>
-        <section>
+        <section data-anime="show-down">
           <h2>Chartreux</h2>
           <p>
             O gato Chartreux, também chamado cartuxo em português, conhecido
@@ -240,7 +240,7 @@
             em rações de boa qualidade para gatinhos.
           </p>
         </section>
-        <section>
+        <section data-anime="show-right">
           <h2>Ashera</h2>
           <p>
             Ashera é um animal de caráter híbrido felino criado pela empresa
@@ -262,7 +262,7 @@
             gatos domésticos e leopardos asiáticos.
           </p>
         </section>
-        <section>
+        <section data-anime="show-down">
           <h2>Siamês</h2>
           <p>
             Gato siamês é uma raça de gato oriental, caracterizada por um corpo
@@ -305,9 +305,9 @@
         </section>
       </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section"data-anime="scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista js-accordion">
+      <dl class="faq-lista" data-anime="accordion">
         <dt>Quem é este ultimo gato lindo da foto?</dt>
         <dd>
           Este lindo gato é pertencente ao criador desta página, atualmente ele
@@ -336,7 +336,7 @@
         </dd>
       </dl>
     </section>
-    <section class="grid-section contato js-scroll" id="contato">
+    <section class="grid-section contato"data-anime="scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <iframe

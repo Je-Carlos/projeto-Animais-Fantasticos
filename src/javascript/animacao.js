@@ -1,7 +1,7 @@
 // Navegação por tabs
 function initTabNav() {
-  const tabMenu = document.querySelectorAll(".js-tabMenu li");
-  const tabContent = document.querySelectorAll(".js-tabContent section");
+  const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
+  const tabContent = document.querySelectorAll("[data-tab='content'] section");
   const activeClass = "active";
   tabContent[0].classList.add(activeClass); // Primeiro item sempre ativo
 
@@ -12,7 +12,8 @@ function initTabNav() {
       tabContent.forEach((section) => {
         section.classList.remove(activeClass);
       });
-      tabContent[index].classList.add(activeClass);
+      const dataDirecao = tabContent[index].dataset.anime;
+      tabContent[index].classList.add(activeClass, dataDirecao);
     }
 
     // Função que adiciona o evento de click em cada imagem, quando clicada,
@@ -28,7 +29,7 @@ initTabNav();
 
 // Accordion List
 function initAccordionList() {
-  const accordionList = document.querySelectorAll(".js-accordion dt");
+  const accordionList = document.querySelectorAll("[data-anime='accordion'] dt");
   const activeClass = "active";
   if (accordionList.length) {
     accordionList[0].classList.add(activeClass);
@@ -47,7 +48,7 @@ initAccordionList();
 
 // Scroll Suave
 function initScrollSuave() {
-  const linksInterno = document.querySelectorAll(".js-menu a[href^='#']");
+  const linksInterno = document.querySelectorAll("[data-menu='scroll'] a[href^='#']");
   function scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
@@ -66,7 +67,7 @@ initScrollSuave();
 
 // Scroll Animation
 function initScrollAnimation() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll("[data-anime='scroll']");
   if (sections.length) {
     const windowLoad = window.innerHeight * 0.5; // Calculo para pegar 50% da tela
     function animaScroll() {
