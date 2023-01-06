@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@300;400;700;900&family=Playfair+Display&display=swap");
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container.active {
+  display: flex;
+}
+@keyframes animaModal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.active .modal {
+  animation: animaModal .3s forwards;
+}
+.modal {
+  background: white;
+  min-width: 300px;
+  padding: 40px;
+  border: 10px solid #fb5;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+}
+.fechar {
+  width: 50px;
+  height: 50px;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  background: #e54;
+  top: -30px;
+  right: -30px;
+  position: absolute;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+}
+.fechar:hover {
+  background-color: #bb4235;
+}
+.modal h1 {
+  font-family: "Playfair Display", sans-serif;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.modal h3 {
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 1rem;
+  color: #4f4d4d;
+}
+.modal p {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #7a7a7a;
+}
+
+.modal input {
+  width: 100%;
+  padding: .9rem 0.5rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+.modal input:hover {
+  background-color: #eeeeee75;
+}
+.modal input:focus-visible{
+  border: none;
+  border-radius: .5rem;
+  outline: 0.13rem solid #fb5;
+}
+
+.modal button[type="submit"] {
+  display: block;
+  background: #e54;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.8rem;
+  font-size: 1rem;
+  color: white;
+  font-family: "Merriweather", serif;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal button[type="submit"]:hover {
+  background-color: #bb4235;
+}
