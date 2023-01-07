@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@300;400;700;900&family=Playfair+Display&display=swap");
+
+.tooltip {
+  position: absolute;
+  z-index: 500;
+  background: rgba(0,0,0,.6);
+  box-shadow: 0 0 0 2px #FB5, 0 0 0 6px rgba(0,0,0,.6);
+  padding: .5rem;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  font-size: .875rem;
+  max-width: 150px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+}
