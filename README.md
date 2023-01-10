@@ -4,13 +4,14 @@
 
 <p align="center">
   <a href="#-technologies">Technologies</a> •
-  <a href="#license">License</a> 
+  <a href="#license">License</a> •
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Documentation</a>
 </p>
 
 <h2 align="center"> O Gatos Fantásticos está sendo desenvolvido como um projeto de JavaScript. </h2>
 
 🚧 **Gatos Fantásticos está em desenvolvimento** 🚧
-<p>Você já pode dar uma espiada em como está ficando <a href="https://je-carlos.github.io/projeto-Gatos-Fantasticos/">aqui</a> 👀</p>
+<p>Você já pode dar uma espiada em como está ficando <a href="https://je-carlos.github.io/projeto-Gatos-Fantasticos/" target="_blank" rel="noopener noreferrer">aqui</a> 👀</p>
 
 ## 🕶 Technologies
 - [JavaScript](https://www.javascript.com/)
