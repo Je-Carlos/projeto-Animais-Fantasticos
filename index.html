@@ -9,10 +9,6 @@
     </script>
     <!-- Script caso a pessoa não possua JS ativo, não afetando sua experiência -->
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/geral.css" />
-    <link rel="stylesheet" href="src/css/modal.css" />
-    <link rel="stylesheet" href="src/css/tooltip.css" />
-
     <title>Gatos Fantásticos</title>
   </head>
   <body>
@@ -20,6 +16,15 @@
       <nav class="menu" data-menu="scroll">
         <ul>
           <li><a href="#animais">Raças</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="instituicao.html">Instituição</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contato">Contato</a></li>
           <li><a data-modal="abrir" href="assinar.html">Assinar</a></li>

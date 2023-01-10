@@ -1,3 +1,4 @@
-@import "geral.css";
-@import "modal.css";
-@import "tooltip.css";
+@import url(geral.css);
+@import url(modal.css);
+@import url(tooltip.css);
+@import url(dropdown-menu.css);
