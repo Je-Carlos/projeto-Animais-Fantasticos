@@ -9,14 +9,21 @@
     </script>
     <!-- Script caso a pessoa não possua JS ativo, não afetando sua experiência -->
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/dropdown-menu.css" />
+    <link rel="stylesheet" href="src/css/mobile-menu.css" />
     <!-- TODO: Verificar pq o @import não funciona quando faço deploy -->
     <title>Gatos Fantásticos</title>
   </head>
   <body>
     <div class="grid-container">
       <nav class="menu" data-menu="scroll">
-        <ul>
+        <button data-menu="button" aria-expanded="false" area-controls="menu">
+          <img
+            class="navIcon"
+            src="src/img/bx-menu.svg"
+            alt="Menu hamburguer com três listras" />
+          <img class="navIcon close" src="src/img/bx-x.svg" alt="" />
+        </button>
+        <ul data-menu="list" id="menu">
           <li><a href="#animais">Raças</a></li>
           <li data-dropdown>
             <a href="sobre.html">Sobre</a>
