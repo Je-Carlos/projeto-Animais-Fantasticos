@@ -26,7 +26,7 @@
   }
 }
 .active .modal {
-  animation: animaModal .3s forwards;
+  animation: animaModal 0.3s forwards;
 }
 .modal {
   background: white;
@@ -74,18 +74,18 @@
 
 .modal input {
   width: 100%;
-  padding: .9rem 0.5rem;
+  padding: 0.9rem 0.5rem;
   box-sizing: border-box;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 1px 1px 6px #0000001c;
 }
 .modal input:hover {
   background-color: #eeeeee75;
 }
-.modal input:focus-visible{
+.modal input:focus-visible {
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   outline: 0.13rem solid #fb5;
 }
 
@@ -104,4 +104,24 @@
 }
 .modal button[type="submit"]:hover {
   background-color: #bb4235;
+}
+@media (max-width: 700px) {
+  .modal {
+    padding: 20px;
+    max-width: 60vw;
+    box-shadow: 0 0 0 5px white;
+    border: 5px solid #fb5;
+  }
+  .fechar {
+    width: 40px;
+    height: 40px;
+    right: -13px;
+    border: 2px solid white;
+  }
+  .modal h3 {
+    font-size: 1rem;
+  }
+  .modal p {
+    font-size: 0.8rem;
+  }
 }
