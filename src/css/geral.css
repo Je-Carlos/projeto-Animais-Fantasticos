@@ -114,6 +114,7 @@ body {
 .animais-lista {
   height: 370px;
   overflow-y: scroll;
+  overflow-x: hidden;
   grid-column: 2;
 }
 .animais-lista li {
@@ -122,10 +123,15 @@ body {
   opacity: 0.6;
   transition: 1s ease;
 }
+.animais-lista li:hover :not(:hover) {
+  opacity: 0.3;
+}
 .animais-lista li:hover {
   opacity: 1;
+  scale: 1.1;
   transition: 1s ease;
 }
+
 .animais-lista::-webkit-scrollbar {
   width: 18px;
 }
@@ -134,6 +140,7 @@ body {
   border-left: 4px solid #faf6ed;
   border-right: 4px solid #faf6ed;
 }
+
 .animais-lista::-webkit-scrollbar-track {
   background: #faf6ed;
 }
