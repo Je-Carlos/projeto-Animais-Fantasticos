@@ -3,7 +3,7 @@ export default function initMobileMenu() {
   const menuButton = document.querySelector("[data-menu='button']");
   const menuList = document.querySelector("[data-menu='list']");
   const navIcon = document.querySelectorAll(".navIcon");
-  const eventos = ["click", "touchstart"];
+  const eventos = ["click"];
 
   if (menuButton) {
     function openMenu(e) {
