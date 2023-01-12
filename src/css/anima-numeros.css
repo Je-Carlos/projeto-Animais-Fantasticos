@@ -1,0 +1,27 @@
+.numeros-grid {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.numeros-grid h3 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0.5rem;
+}
+.numeros-grid span {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e54;
+}
+.numeros-grid p {
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  .numeros-grid {
+    grid-column: 1;
+  }
+}

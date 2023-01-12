@@ -9,10 +9,10 @@
     </script>
     <!-- Script caso a pessoa não possua JS ativo, não afetando sua experiência -->
     <link rel="stylesheet" href="src/css/style.css" />
-    <!-- TODO: Verificar pq o @import não funciona quando faço deploy -->
     <title>Gatos Fantásticos</title>
   </head>
   <body>
+    <!-- Header -->
     <div class="grid-container">
       <nav class="menu" data-menu="scroll">
         <button data-menu="button" aria-expanded="false" area-controls="menu">
@@ -38,6 +38,7 @@
           <li><a data-modal="abrir" href="assinar.html">Assinar</a></li>
         </ul>
       </nav>
+      <!-- Seção Imagens -->
       <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Gatos Fantásticos</h1>
         <ul class="animais-lista" data-tab="menu">
@@ -72,6 +73,7 @@
               alt="Um gato persa de cor laranja, preto e marrom." />
           </li>
         </ul>
+        <!-- Descrição felinos -->
         <div class="animais-descricao" data-tab="content">
           <section data-anime="show-right">
             <h2>Siamês</h2>
@@ -327,6 +329,7 @@
           </section>
         </div>
       </section>
+      <!-- FAQ -->
       <section class="grid-section" data-anime="scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
         <dl class="faq-lista" data-anime="accordion">
@@ -358,6 +361,43 @@
           </dd>
         </dl>
       </section>
+      <!-- Números -->
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Expectativa de vida</h1>
+        <div class="numeros-grid">
+          <div class="numero-animal">
+            <h3>Siamês</h3>
+            <span data-numero>20</span>
+            <p>anos</p>
+          </div>
+          <div class="numero-animal">
+            <h3>Maine Coon</h3>
+            <span data-numero>12</span>
+            <p>anos</p>
+          </div>
+          <div class="numero-animal">
+            <h3>Sphynx</h3>
+            <span data-numero>14</span>
+            <p>anos</p>
+          </div>
+          <div class="numero-animal">
+            <h3>Chartreux</h3>
+            <span data-numero>15</span>
+            <p>anos</p>
+          </div>
+          <div class="numero-animal">
+            <h3>Ashera</h3>
+            <span data-numero>16</span>
+            <p>anos</p>
+          </div>
+          <div class="numero-animal">
+            <h3>Persa</h3>
+            <span data-numero>15</span>
+            <p>anos</p>
+          </div>
+        </div>
+      </section>
+      <!-- Contato -->
       <section class="grid-section contato" data-anime="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
@@ -380,6 +420,7 @@
           <li>São Paulo - Jaboticabal</li>
         </ul>
       </section>
+      <!-- Footer -->
       <footer class="copy">
         <p>
           Todos os direitos reservados
@@ -392,6 +433,7 @@
         </p>
       </footer>
     </div>
+    <!-- Newsletters -->
     <section class="modal-container" data-modal="container">
       <div class="modal">
         <button data-modal="fechar" class="fechar">X</button>
