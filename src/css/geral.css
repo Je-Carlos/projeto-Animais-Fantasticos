@@ -321,3 +321,17 @@ body {
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
 }
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #cb001b;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1px solid #000;
+}
+[data-semana].aberto::after {
+  background: #08f26e;
+}
