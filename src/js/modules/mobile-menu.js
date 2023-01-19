@@ -12,10 +12,11 @@ export default function initMobileMenu() {
       navIcon.forEach((icon) => {
         icon.classList.toggle("close");
       });
-      // TODO: Arrumar botão ao clicar fora não mudar o botão
       outsideClick(menuList, eventos, () => {
         menuList.classList.remove("active");
         menuButton.classList.remove("active");
+        navIcon[0].classList.remove("close");
+        navIcon[1].classList.add("close");
       });
     }
     eventos.forEach((evento) => menuButton.addEventListener(evento, openMenu));
