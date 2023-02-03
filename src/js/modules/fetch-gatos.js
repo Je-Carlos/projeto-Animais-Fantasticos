@@ -3,15 +3,19 @@ import initAnimaNumeros from "./anima-numeros.js";
 export default function initFetchGatos() {
   // puxando o arquivo da API e transformando em json
   async function fetchGatos(url) {
-    const gatosResponse = await fetch(url);
-    const gatosJson = await gatosResponse.json();
-    const numerosGrid = document.querySelector(".numeros-grid");
-    gatosJson.forEach((gato) => {
-      const divGato = createCat(gato);
-      numerosGrid.appendChild(divGato);
-    });
-    // iniciando a função de animar os números após ocorrer o fetch
-    initAnimaNumeros();
+    try {
+      const gatosResponse = await fetch(url);
+      const gatosJson = await gatosResponse.json();
+      const numerosGrid = document.querySelector(".numeros-grid");
+      gatosJson.forEach((gato) => {
+        const divGato = createCat(gato);
+        numerosGrid.appendChild(divGato);
+      });
+      // iniciando a função de animar os números após ocorrer o fetch
+      initAnimaNumeros();
+    } catch (erro) {
+      console.log(erro);
+    }
   }
   fetchGatos("./src/datagato.json");
 
