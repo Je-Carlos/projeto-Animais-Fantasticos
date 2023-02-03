@@ -6,9 +6,10 @@ import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMobileMenu from "./modules/mobile-menu.js";
-import initAnimaNumeros from "./modules/anima-numeros.js";
 import initWorkingTime from "./modules/workingTime.js";
+import initFetchGatos from "./modules/fetch-gatos.js";
 
+initFetchGatos();
 initScrollSuave();
 initScrollAnimation();
 initAccordionList();
@@ -17,5 +18,4 @@ initModal();
 initTooltip();
 initDropdownMenu();
 initMobileMenu();
-initAnimaNumeros();
 initWorkingTime();
