@@ -8,6 +8,7 @@ import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMobileMenu from "./modules/mobile-menu.js";
 import initWorkingTime from "./modules/workingTime.js";
 import initFetchGatos from "./modules/fetch-gatos.js";
+import initFetchBtc from "./modules/fetch-btc.js";
 
 initFetchGatos();
 initScrollSuave();
@@ -19,3 +20,4 @@ initTooltip();
 initDropdownMenu();
 initMobileMenu();
 initWorkingTime();
+initFetchBtc();
